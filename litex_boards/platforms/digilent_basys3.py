@@ -82,13 +82,19 @@ _io = [
     ),
 
 
+    # servo esquerda -> JA3
+    # servo direita -> JB3
+    # sensor esquerda trigger -> JA1
+    # sensor esquerda echo -> JA7
+    # sensor direita trigger -> JB1
+    # sensor direita echo -> JB7
     ("gpio", 0,
-       Subsignal("a", Pins("J1   L2  J2  G2  H1  K2  H2  G3")),
-       Subsignal("b", Pins("A14 A16 B15 B16 A15 A17 C15 C16")),
-       Subsignal("c0", Pins("K17")),
-       Subsignal("c1", Pins("M18")),
-       Subsignal("c6", Pins("L17")),
-       Subsignal("c7", Pins("M19")),
+       Subsignal("a1", Pins("J1")),
+       Subsignal("a3", Pins("J2")),
+       Subsignal("a7", Pins("H1")),
+       Subsignal("b1", Pins("A14")),
+       Subsignal("b3", Pins("B15")),
+       Subsignal("b7", Pins("A15")),
        Subsignal("xadc", Pins("J3  L3  M2  N2  K3  M3  M1  N1")),
        IOStandard("LVCMOS33"))
 ]
